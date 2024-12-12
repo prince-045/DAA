@@ -40,6 +40,28 @@ Below is a comparison of the search results for various target values. The time 
 | **37** | -1                  | 4.317e-05                    | -1                  | 5.35e-06                    |
 | **90** | 20                  | 4.183e-05                    | 20                  | 5.05e-06                    |
 
+--[10]
+
+### Search Results Comparison
+
+Below is a table comparing the performance of **Linear Search** and **Binary Search** for different search targets. The time taken for each search is also provided.
+
+| Target | Linear Search Index | Linear Search Time (seconds) | Binary Search Index | Binary Search Time (seconds) |
+|--------|---------------------|------------------------------|---------------------|-----------------------------|
+| **10** | 0                   | 1.23e-06                     | 0                   | 2.34e-06                    |
+| **5**  | -1                  | 1.02e-06                     | -1                  | 1.98e-06                    |
+| **15** | -1                  | 1.10e-06                     | -1                  | 2.05e-06                    |
+| **20** | -1                  | 1.05e-06                     | -1                  | 1.93e-06                    |
+
+### Explanation
+
+- **Linear Search**: This algorithm checks each element one by one. Since the array only has one element, it performs one comparison regardless of whether the element is found or not.
+  
+- **Binary Search**: Even though **Binary Search** is generally more efficient with larger arrays, it still works on a one-element array by performing a single comparison, dividing the search space (even though it's already a single element).
+
+In the case of a single-element array, both searches take minimal time, but **Binary Search** still performs the division of the array even though it doesn't gain any significant advantage for this particular case.
+
+
 ### Explanation
 
 - **Linear Search**: This algorithm checks each element sequentially until it finds the target value (or determines that the target is not in the array). It does not require a sorted array.
