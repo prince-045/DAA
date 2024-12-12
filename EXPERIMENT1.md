@@ -86,3 +86,4 @@ Here are different **search scenarios** in the table:
 - **Linear Search** is more versatile (it doesn't require the array to be sorted) but is slower for large datasets.
 - **Binary Search**, while faster, requires the array to be sorted, and its efficiency improves with larger datasets.
 
+- **FOR ONLY ONE ELEMENT ARRAY:- binary search > linear search (in time consuming)
