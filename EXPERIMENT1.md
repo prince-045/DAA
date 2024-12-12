@@ -16,32 +16,7 @@ Below is a comparison of the search results for various target values. The time 
 | **1**  | -1                  | 2.515e-05                    | -1                  | 4.08e-06                    |
 | **12** | -1                  | 2.427e-05                    | -1                  | 4.22e-06                    |
 
-### Explanation
 
-- **Linear Search**: This algorithm checks each element sequentially until it finds the target value (or determines that the target is not in the array). It does not require a sorted array.
-- **Binary Search**: This algorithm works only on sorted arrays and repeatedly divides the search interval in half, making it faster for large arrays with a time complexity of **O(log n)**.
-
-### Observations
-
-1. **Linear Search**:
-   - Linear search takes progressively longer for larger arrays, as it needs to check each element in sequence.
-   - Even though the array is small in this case, Linear Search takes slightly more time compared to Binary Search.
-
-2. **Binary Search**:
-   - Binary Search is more efficient, especially for larger arrays, due to its logarithmic time complexity. For small arrays like the one here, the difference in time is negligible but still measurable.
-   - The time taken for Binary Search is consistently faster, even though both algorithms find the target in roughly the same number of steps for this small array.
-
-3. **Element Not Found**:
-   - When the element is not found, both search algorithms take a little longer to confirm that the element does not exist. This is reflected in the slightly higher time taken for searches with a result of `-1`.
-
-### Time Complexity
-
-- **Linear Search**: O(n), where `n` is the number of elements in the array.
-- **Binary Search**: O(log n), where `n` is the number of elements in the array (only works on sorted arrays).
-
-### Conclusion
-
-For small arrays, the time difference between **Linear Search** and **Binary Search** is minimal, but **Binary Search** is always faster for larger datasets due to its logarithmic time complexity. **Linear Search** is ea
 
 [2, 5, 7, 10, 13, 18, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100]
 ### Search Results Comparison
