@@ -74,3 +74,61 @@ int main() {
 
     return 0;
 }
+
+// #include <iostream>
+// #include <vector>
+
+// using namespace std;
+
+// // Function to print the positions of queens (dimensions)
+// void printDimensions(const vector<int>& board, int n) {
+//     cout << "Positions of queens: ";
+//     for (int i = 0; i < n; i++) {
+//         cout << "(" << i << ", " << board[i] << ") ";
+//     }
+//     cout << endl;
+// }
+
+// // Check if it's safe to place a queen at board[row][col]
+// bool isSafe(const vector<int>& board, int row, int col) {
+//     for (int i = 0; i < row; i++) {
+//         // Check if the column or diagonals are under attack
+//         if (board[i] == col || abs(board[i] - col) == abs(i - row)) {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+// // Backtracking function to solve the N-Queens problem
+// bool solveNQueens(vector<int>& board, int row, int n) {
+//     if (row == n) {
+//         printDimensions(board, n);  // Print the positions (dimensions) of queens
+//         return true;
+//     }
+
+//     bool res = false;
+//     for (int col = 0; col < n; col++) {
+//         if (isSafe(board, row, col)) {
+//             board[row] = col;  // Place queen at (row, col)
+//             res = solveNQueens(board, row + 1, n) || res;  // Recur to place the rest of the queens
+//         }
+//     }
+//     return res;  // Return true if any solution is found
+// }
+
+// int main() {
+//     int n;
+//     cout << "Enter the number of queens: ";
+//     cin >> n;
+
+//     // Create a board represented by a vector, where board[i] = column of the queen in row i
+//     vector<int> board(n, -1);  // Initialize all positions to -1 (no queen placed)
+
+//     if (!solveNQueens(board, 0, n)) {
+//         cout << "No solution exists!" << endl;
+//     }
+
+//     return 0;
+// }
+
